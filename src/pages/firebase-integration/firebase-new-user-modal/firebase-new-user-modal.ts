@@ -25,6 +25,8 @@ export class FirebaseNewUserModalPage {
   }
 
   resetFields(){
+    // This is the default image for the AVATAR; we must change it to
+    // another more appropiate as default
     this.avatar = "https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg";
     this.validations_form = this.formBuilder.group({
       name: new FormControl('', Validators.required),
